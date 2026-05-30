@@ -53,7 +53,7 @@ Sistem ini mengelompokkan kualitas biji kopi ke dalam 2 kelas berdasarkan standa
 └── README.md                    # Dokumentasi repositori GitHub
 
 
-💻 Cara Menjalankan Proyek Secara Lokal1. Kloning RepositoriBashgit clone
+## 💻 Cara Menjalankan Proyek Secara Lokal1. Kloning RepositoriBashgit clone
 
 1. Buat dan Aktifkan Virtual EnvironmentBash# Untuk Windows
 python -m venv venv
