@@ -51,30 +51,43 @@ Sistem ini mengelompokkan kualitas biji kopi ke dalam 2 kelas berdasarkan standa
 ├── model_knn_kopi.pkl           # Berkas biner model KNN yang sudah terlatih
 ├── scaler_kopi.pkl              # Berkas biner StandardScaler untuk normalisasi fitur
 └── README.md                    # Dokumentasi repositori GitHub
+```
+## 💻 Cara Menjalankan Proyek Secara Lokal
 
-
-## 💻 Cara Menjalankan Proyek Secara Lokal1. Kloning RepositoriBashgit clone
-
-1. Buat dan Aktifkan Virtual EnvironmentBash# Untuk Windows
+2. Buat dan Aktifkan Virtual Environment
+Bash
+# Untuk Windows
 python -m venv venv
 venv\Scripts\activate
 
 # Untuk macOS/Linux
 python3 -m venv venv
 source venv/bin/activate
-2. Instal DependensiBashpip install flask scikit-learn pandas numpy
-3. Jalankan Aplikasi FlaskBashpython app.py
+3. Instal Dependensi
+Bash
+pip install flask scikit-learn pandas numpy
 
-📊 Metodologi SingkatPra-pemrosesan Data:
-Enam parameter rasa diinput oleh pengguna, kemudian disamakan bobot skalanya secara otomatis menggunakan StandardScaler
-agar tidak terjadi dominasi fitur saat perhitungan jarak spasial.
+4. Jalankan Aplikasi Flask
+```Bash
+python app.py
+Buka browser Anda dan akses halaman lokal di: http://127.0.0.1:5000/
+```
+📊 Metodologi Singkat
+Pra-pemrosesan Data: Enam parameter rasa diinput oleh pengguna, kemudian disamakan bobot skalanya secara otomatis 
+menggunakan StandardScaler agar tidak terjadi dominasi fitur saat perhitungan jarak spasial.
 
-Perhitungan Jarak (KNN): Model mengukur kedekatan karakteristik data baru dengan data historis di dataset
-menggunakan rumus Euclidean Distance untuk mencari tetangga terdekat (K).
+Perhitungan Jarak (KNN): Model mengukur kedekatan karakteristik data baru dengan data historis 
+di dataset menggunakan rumus Euclidean Distance untuk mencari tetangga terdekat (K).
 
-Intervensi Backend (Hybrid Logic): Jika rata-rata nilai input berada di bawah batas kelayakan industri,
-backend Flask secara sensitif memotong bias kelas mayoritas dan menetapkan hasil
- langsung sebagai Commercial Coffee demi menjaga presisi sistem.
-📝 LisensiProyek ini dibuat untuk pemenuhan tugas akhir/skripsi dan didistribusikan di bawah lisensi MIT License.
+Intervensi Backend (Hybrid Logic): Jika rata-rata nilai input berada di bawah batas kelayakan industri, backend Flask secara sensitif memotong bias kelas mayoritas dan menetapkan hasil langsung sebagai Commercial Coffee demi menjaga presisi sistem.
+
+📝 Lisensi
+Proyek ini dibuat untuk pemenuhan tugas akhir/skripsi dan didistribusikan di bawah lisensi MIT License. 
 Silakan gunakan dan kembangkan lebih lanjut dengan tetap mencantumkan kredit penulis asal.
+
 Dikembangkan dengan penuh ❤️ untuk kemajuan industri komoditas kopi Indonesia.
+
+
+---
+
+
