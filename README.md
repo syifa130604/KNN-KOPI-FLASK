@@ -51,17 +51,19 @@ Sistem ini mengelompokkan kualitas biji kopi ke dalam 2 kelas berdasarkan standa
 ├── model_knn_kopi.pkl           # Berkas biner model KNN yang sudah terlatih
 ├── scaler_kopi.pkl              # Berkas biner StandardScaler untuk normalisasi fitur
 └── README.md                    # Dokumentasi repositori GitHub
-💻 Cara Menjalankan Proyek Secara Lokal1. Kloning RepositoriBashgit clone [https://github.com/username/ad-cafe-knn-classifier.git](https://github.com/username/ad-cafe-knn-classifier.git)
-cd ad-cafe-knn-classifier
-2. Buat dan Aktifkan Virtual EnvironmentBash# Untuk Windows
+
+
+💻 Cara Menjalankan Proyek Secara Lokal1. Kloning RepositoriBashgit clone
+
+1. Buat dan Aktifkan Virtual EnvironmentBash# Untuk Windows
 python -m venv venv
 venv\Scripts\activate
 
 # Untuk macOS/Linux
 python3 -m venv venv
 source venv/bin/activate
-3. Instal DependensiBashpip install flask scikit-learn pandas numpy
-4. Jalankan Aplikasi FlaskBashpython app.py
+2. Instal DependensiBashpip install flask scikit-learn pandas numpy
+3. Jalankan Aplikasi FlaskBashpython app.py
 
 📊 Metodologi SingkatPra-pemrosesan Data:
 Enam parameter rasa diinput oleh pengguna, kemudian disamakan bobot skalanya secara otomatis menggunakan StandardScaler
