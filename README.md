@@ -62,11 +62,14 @@ python3 -m venv venv
 source venv/bin/activate
 3. Instal DependensiBashpip install flask scikit-learn pandas numpy
 4. Jalankan Aplikasi FlaskBashpython app.py
+
 📊 Metodologi SingkatPra-pemrosesan Data:
 Enam parameter rasa diinput oleh pengguna, kemudian disamakan bobot skalanya secara otomatis menggunakan StandardScaler
 agar tidak terjadi dominasi fitur saat perhitungan jarak spasial.
+
 Perhitungan Jarak (KNN): Model mengukur kedekatan karakteristik data baru dengan data historis di dataset
 menggunakan rumus Euclidean Distance untuk mencari tetangga terdekat (K).
+
 Intervensi Backend (Hybrid Logic): Jika rata-rata nilai input berada di bawah batas kelayakan industri,
 backend Flask secara sensitif memotong bias kelas mayoritas dan menetapkan hasil
  langsung sebagai Commercial Coffee demi menjaga presisi sistem.
